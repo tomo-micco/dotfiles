@@ -23,7 +23,7 @@ return {
             -- Goの設定
             vim.lsp.config("gopls", {
                 cmd = { "gopls" },
-                filtetypes = { "go", "gomod", "gowork", "gotmpl" },
+                filetypes = { "go", "gomod", "gowork", "gotmpl" },
             })
             vim.lsp.enable("gopls")
 
@@ -36,7 +36,7 @@ return {
 
             vim.lsp.config("lua_ls", {
                 cmd = { "lua-language-server" },
-                filetype = { "lua" },
+                filetypes = { "lua" },
             })
 
             vim.lsp.enable("lua_ls")

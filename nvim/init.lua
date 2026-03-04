@@ -1,9 +1,9 @@
 -- load options
+vim.g.mapleader = " "
+
 require("options")
 require("config.lazy")
 require("config.keymaps")
-
-vim.g.mapleader = " "
 
 -- auto-format
 vim.api.nvim_create_autocmd("BufWritePre", {

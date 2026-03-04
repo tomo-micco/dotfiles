@@ -1,6 +1,6 @@
 return {
     "hrsh7th/nvim-cmp",
-    depenedencies = {
+    dependencies = {
         "hrsh7th/cmp-nvim-lsp", -- LSPからの補完
         "hrsh7th/cmp-path", -- ファイルパスの保管
         "hrsh7th/cmp-buffer", -- 開いているファイルないの単語補完

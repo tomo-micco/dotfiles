@@ -7,7 +7,7 @@ $directory\
 $git_branch\
 $git_status\
 $golang\
-$csharp\
+$dotnet\
 $bun\
 $nodejs\
 $python\
@@ -27,12 +27,12 @@ style = "bold cyan"
 # go.modがあるディレクトリで表示する
 format = "via [$symbol($version )]($style)"
 
-[csharp]
+[dotnet]
 symbol = " "
 style = "bold purple"
 # .csprojや.slnがある場所で表示
 detect_extensions = ["csproj", "sln"]
-format = "via [$symbol($version )($style)]"
+format = "via [$symbol($version )]($style)"
 
 [typescript]
 # TypeScriptの単体のモジュールではなく、Nodeを表示するのが一般的

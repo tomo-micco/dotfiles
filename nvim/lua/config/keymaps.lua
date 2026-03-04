@@ -16,3 +16,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
         keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
     end,
 })
+
+-- Git (Neogit, Diffview)
+local keymap = vim.keymap
+keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>", { desc = "Neogit" })
+keymap.set("n", "<leader>dv", "<cmd>DiffviewOpen<CR>", { desc = "Diffview Open" })
+keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<CR>", { desc = "Diffview Close" })

@@ -1,0 +1,45 @@
+# 改行を入れない
+add_newline = false
+
+# 表示する項目の順番と構成
+format = """
+$directory\
+$git_branch\
+$git_status\
+$golang\
+$csharp\
+$bun\
+$nodejs\
+$python\
+$custom\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[❯](bold cyan)"
+error_symbol = "[❯](bold red)"
+
+# --- 言語別設定 ---
+
+[golang]
+symbol = "󰟓 "
+style = "bold cyan"
+# go.modがあるディレクトリで表示する
+format = "via [$symbol($version )]($style)"
+
+[csharp]
+symbol = " "
+style = "bold purple"
+# .csprojや.slnがある場所で表示
+detect_extensions = ["csproj", "sln"]
+format = "via [$symbol($version )($style)]"
+
+[typescript]
+# TypeScriptの単体のモジュールではなく、Nodeを表示するのが一般的
+symbol = " "
+
+[nodejs]
+symbol = " "
+style = "bold green"
+# package.jsonがある場所で表示
+format = "via [$symbol($version )]($style)"

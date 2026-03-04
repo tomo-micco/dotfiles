@@ -1,0 +1,18 @@
+# OS generated files
+.DS_Store
+
+# Neovim temp files
+# 編集履歴やプラグインの自動生成ファイルを除外
+nvim/.netrwhist
+nvim/undo/
+nvim/shada/
+nvim/spell/*.add.sql
+
+# WezTerm
+# ログファイルなどが生成される場合を除外
+wezterm/*.log
+
+# Generic backup files
+*.swp
+*~
+*.tmp

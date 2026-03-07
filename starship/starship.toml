@@ -10,6 +10,7 @@ $golang\
 $dotnet\
 $bun\
 $nodejs\
+$typescript\
 $python\
 $custom\
 $line_break\
@@ -35,8 +36,9 @@ detect_extensions = ["csproj", "sln"]
 format = "via [$symbol($version )]($style)"
 
 [typescript]
-# TypeScriptの単体のモジュールではなく、Nodeを表示するのが一般的
 symbol = " "
+style = "bold blue"
+format = "via [$symbol($version )]($style)"
 
 [nodejs]
 symbol = " "

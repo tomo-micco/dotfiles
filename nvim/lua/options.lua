@@ -36,7 +36,7 @@ vim.opt.showmatch = true
 
 -- Interface
 vim.opt.winblend = 80
-vim.opt.pumblend = 50
+vim.opt.pumblend = 0
 vim.opt.showtabline = 2
 vim.opt.signcolumn = "yes"
 

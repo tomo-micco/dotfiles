@@ -10,7 +10,7 @@ $golang\
 $dotnet\
 $bun\
 $nodejs\
-$typescript\
+${custom.typescript}\
 $python\
 $custom\
 $line_break\
@@ -35,10 +35,14 @@ style = "bold purple"
 detect_extensions = ["csproj", "sln"]
 format = "via [$symbol($version )]($style)"
 
-[typescript]
+# TypeScript 用のカスタム設定
+[custom.typescript]
+# tsconfig.json がある、または .ts / .tsx ファイルがある場合に表示
+detect_files = ["tsconfig.json"]
+detect_extensions = ["ts", "tsx"]
 symbol = " "
 style = "bold blue"
-format = "via [$symbol($version )]($style)"
+format = "via [$symbol]($style)"
 
 [nodejs]
 symbol = " "

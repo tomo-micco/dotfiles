@@ -25,3 +25,6 @@ vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter", "CursorHold", "CursorHo
 -- リアルタイムで監視するための設定
 -- 4秒間入力がない場合に自動でチェックを走らせる
 vim.opt.updatetime = 4000
+
+-- modelineを無効化
+vim.opt.modeline = false
